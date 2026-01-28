@@ -8,9 +8,9 @@ async function main() {
 
     // CONFIG: Probability
     // Run every 20 mins.
-    // Target: Avg gap of ~60-80 mins.
-    // 20 mins * (1 / 0.3) approx 66 mins avg interval.
-    const PROBABILITY = 0.3;
+    // Target: Avg gap of ~26 mins (if we run 3 times an hour, 0.75 means ~2.25 runs/hour)
+    // 20 mins * (1 / 0.75) approx 27 mins avg interval.
+    const PROBABILITY = 0.75;
 
     // 1. Simple Probability Check
     const randomVal = Math.random();
