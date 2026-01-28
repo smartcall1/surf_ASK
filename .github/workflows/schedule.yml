@@ -1,0 +1,32 @@
+name: AskSurf Bot Schedule
+
+on:
+  schedule:
+    - cron: '*/20 23,0-14 * * *' # Check every 20 mins during 08:00-23:00 KST
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  run-bot:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    - name: Install Dependencies
+      run: npm install
+
+    - name: Run Bot Action
+      run: node action_runner.js
+      env:
+        # If we need env vars later
+        CI: true
+        COOKIES_JSON: ${{ secrets.COOKIES_JSON }}
+        LOCALSTORAGE_JSON: ${{ secrets.LOCALSTORAGE_JSON }}
+
+
