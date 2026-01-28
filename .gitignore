@@ -2,4 +2,3 @@ node_modules/
 cookies.json
 localstorage.json
 .env
-questions.txt

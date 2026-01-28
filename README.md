@@ -9,7 +9,7 @@
 - `bot.js`: 브라우저 자동화 핵심 로직.
 - `config.js`: 시간 설정 및 **선택자(Selector)** 설정.
 - `cookies.json` & `localstorage.json`: 로그인 정보가 담긴 파일 (gitignore 처리)
-- `questions.txt` : 질문이 담긴파일(gitignore 처리)
+- `questions.txt` : 질문이 담긴파일
 
 ## 🚀 1. 설치 및 필수 설정
 
