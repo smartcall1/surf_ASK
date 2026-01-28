@@ -4,7 +4,8 @@
 
 ## 파일 구조
 - `get_cookies.js`: **최초 1회 실행용**. 수동 로그인 후 쿠키와 로컬스토리지 데이터를 추출함
-- `index.js`: **로컬 실행용**. 10분마다 루프를 돌며 실행됨
+- `local_scheduler.js`: **로컬 실행용 (추천)**. GitHub Actions와 동일한 로직(시간대, 75% 확률, 20분 주기)으로 실행
+- `index.js`: (구버전) 단순 반복 실행
 - `action_runner.js`: **GitHub Actions용**. 매 시간 실행 여부를 결정.
 - `bot.js`: 브라우저 자동화 핵심 로직.
 - `config.js`: 시간 설정 및 **선택자(Selector)** 설정.
@@ -31,10 +32,14 @@ node get_cookies.js
 3. `cookies.json`과 `localstorage.json` 파일이 생성됨.
 
 ## 2. 로컬에서 실행하기
+GitHub Actions와 **완전히 동일한 전략** (06:00~23:00 운영, 20분 주기, 75% 확률)으로 로컬에서 실행하려면:
+
 ```bash
-node index.js
+node local_scheduler.js
 ```
-이제 저장된 로그인 정보를 사용하여 봇이 자동으로 질문을 수행함.
+
+이 스크립트는 백그라운드에서 계속 실행되며, 정해진 시간과 확률에 따라 봇을 구동합니다.
+로그인 정보(`cookies.json`)가 있어야 동작합니다.
 
 ## 3. GitHub Actions에서 실행
 
