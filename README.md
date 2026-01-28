@@ -5,7 +5,7 @@
 ## 📁 파일 구조
 - `get_cookies.js`: **최초 1회 실행용**. 수동 로그인 후 쿠키와 로컬스토리지 데이터를 추출함
 - `index.js`: **로컬 실행용**. 10분마다 루프를 돌며 실행됨
-- `action_runner.js`: **GitHub Actions용**. 매 시간 실행 여부(80%)를 결정.
+- `action_runner.js`: **GitHub Actions용**. 매 시간 실행 여부를 결정.
 - `bot.js`: 브라우저 자동화 핵심 로직.
 - `config.js`: 시간 설정 및 **선택자(Selector)** 설정.
 - `cookies.json` & `localstorage.json`: 로그인 정보가 담긴 파일 (gitignore 처리)
