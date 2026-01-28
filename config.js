@@ -1,6 +1,6 @@
 module.exports = {
     // Time Range (KST - UTC+9)
-    START_HOUR: 8,
+    START_HOUR: 6,
     END_HOUR: 23,
 
     // Interval settings (in minutes)
