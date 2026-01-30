@@ -32,7 +32,7 @@ node get_cookies.js
 3. `cookies.json`과 `localstorage.json` 파일이 생성됨.
 
 ## 2. 로컬에서 실행하기
-GitHub Actions와 **완전히 동일한 전략** (06:00~23:00 운영, 20분 주기, 75% 확률)으로 로컬에서 실행하려면:
+GitHub Actions와 **완전히 동일한 전략** (06:00~23:00 운영, 20분 주기, 85% 확률)으로 로컬에서 실행하려면:
 
 ```bash
 node local_scheduler.js
@@ -47,7 +47,7 @@ node local_scheduler.js
 
 - **스케줄**: 06:00 ~ 23:00 (KST) 사이에 **20분마다** 체크 (총 54회 트리거)
 - **비용 계산**: 54회 × 30일 = **월 1,620분 소모** (무료 한도 2,000분의 약 81% 사용)
-- **동작 방식**: 20분마다 깨어나서 약 75% 확률로 질문. (불규칙한 시간대 형성)
+- **동작 방식**: 20분마다 깨어나서 약 85% 확률로 질문. (불규칙한 시간대 형성)
 - **설정 방법**:
     1. 로컬에 생성된 `cookies.json`과 `localstorage.json`은 보안상 repo에 올리지 마세요 (`.gitignore` 처리됨).
     2. GitHub 저장소 -> `Settings` -> `Secrets and variables` -> `Actions`로 이동.
