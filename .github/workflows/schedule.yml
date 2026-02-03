@@ -2,7 +2,7 @@ name: AskSurf Bot Schedule
 
 on:
   schedule:
-    - cron: '*/20 21-23,0-14 * * *' # Check every 20 mins during 06:00-23:00 KST
+    - cron: '*/20 21-23,0-15 * * *' # Check every 20 mins during 06:00-00:00 KST # Check every 20 mins during 06:00-00:00 KST # Check every 20 mins during 06:00-23:00 KST
   workflow_dispatch: # Allow manual trigger
 
 jobs:
