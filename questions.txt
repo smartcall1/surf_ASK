@@ -798,3 +798,203 @@ EigenLayer를 타겟으로 하는 대규모 **'공격 비용'**이 실제 이더
 오퍼레이터의 작업 결과물에 대한 '사후 검증(Fraud Proof)' 방식과 '실시간 검증(Validity Proof)' 방식 중 EigenLayer가 선호하는 쪽은?
 EigenLayer 생태계에서 발생하는 모든 트랜잭션과 슬래싱 이력을 투명하게 추적할 수 있는 전용 익스플로러(Explorer)의 핵심 기능은?
 EigenLayer의 기술적 이해도를 높이기 위해 개발자가 가장 먼저 분석해야 할 'Core-Smart-Contracts' 레포지토리의 구조와 핵심 파일은?
+KyberSwap이 뭐야? 한 문장으로 정의해줘.
+KyberSwap과 일반 중앙화 거래소(CEX)의 가장 큰 차이점은?
+KyberSwap Aggregator(애그리게이터)가 정확히 무슨 일을 해?
+"DEX Aggregator"로서 KyberSwap을 쓰면 왜 더 싼 가격에 거래할 수 있어?
+KyberSwap에서 말하는 'Dynamic Market Maker(DMM)'가 뭐야?
+KyberSwap은 어떤 블록체인 네트워크들을 지원해?
+KyberSwap을 쓰려면 회원가입이나 KYC(본인인증)가 필요해?
+KyberSwap의 핵심 서비스 3가지만 꼽아줘.
+KyberSwap은 비수탁형(Non-custodial) 거래소라는데, 그게 내 자산 안전이랑 무슨 상관이야?
+KyberSwap에서 'Swap' 버튼을 누르면 내부적으로 어떤 과정이 일어나?
+KyberSwap의 라우팅 알고리즘(Smart Routing)은 어떻게 최적의 경로를 찾아?
+KyberSwap Classic과 KyberSwap Elastic의 차이점은 뭐야?
+KyberSwap Elastic에서 '집중화된 유동성(Concentrated Liquidity)'이란?
+KyberSwap의 스마트 컨트랙트는 어떤 보안 감사를 받았어?
+KyberSwap API를 사용해서 내 앱에 스왑 기능을 넣으려면 어떻게 해야 해?
+KyberSwap의 가스비 최적화 기술은 다른 DEX와 비교했을 때 어때?
+KyberSwap Elastic의 '재투자 곡선(Reinvestment Curve)'이 뭐야?
+KyberSwap은 오프체인 데이터를 사용해, 아니면 100% 온체인이야?
+KyberSwap의 거버넌스 토큰인 KNC의 유틸리티는 뭐야?
+KyberDAO는 어떻게 운영되고, 내가 투표하면 어떤 보상을 받아?
+KyberSwap에 유동성을 공급(LP)하면 돈을 어떻게 벌어?
+'비영구적 손실(Impermanent Loss)'이 뭐야? KyberSwap에선 이걸 어떻게 줄여?
+KyberSwap Elastic의 'Fee Tier(수수료 등급)'는 어떻게 선택하는 게 좋아?
+'Yield Farming(이자 농사)' 보상은 보통 어떤 토큰으로 지급돼?
+KyberSwap에서 LP 토큰을 스테이킹하는 방법 알려줘.
+KyberSwap의 'Amplification Factor(AMP)'가 유동성 효율에 어떤 영향을 줘?
+특정 풀의 APR(연이율)이 왜 매일 변하는 거야?
+KyberSwap에서 내 수익(LP Fees)은 자동으로 재투자돼?
+유동성을 제거(Remove Liquidity)할 때 주의해야 할 점은?
+KyberSwap에서 'Just-in-Time(JIT) Liquidity' 공격을 방어하는 메커니즘이 있어?
+KyberAI 서비스가 뭐야? 트레이딩에 어떻게 도움이 돼?
+KyberAI의 'KyberScore'는 어떤 지표를 바탕으로 계산돼?
+KyberAI에서 'Trending Soon' 토큰은 어떤 원리로 예측해?
+KyberSwap의 'Limit Order(지정가 주문)'는 가스비가 안 들어?
+지정가 주문을 걸어뒀을 때 체결이 안 되는 이유는 뭐야?
+KyberSwap의 'Zap' 기능이 뭐야? 유동성 공급할 때 왜 편해?
+KyberSwap 대시보드에서 내 포트폴리오를 어떻게 분석해?
+KyberAI를 이용해 '고래(Whales)'들의 움직임을 추적할 수 있어?
+KyberSwap의 'Anti-Sniping' 기능은 어떻게 작동해?
+KyberSwap에서 제공하는 차트 데이터는 어디서 가져오는 거야?
+KyberSwap이 과거에 해킹 사고(Exploit)를 당한 적이 있어? 어떻게 대응했어?
+KyberSwap Elastic 공격 사건의 기술적 원인이 뭐였어?
+내가 연결한 지갑의 'Approve' 권한을 해제(Revoke)해야 하는 이유는?
+KyberSwap 공식 사이트인지 확인하는 방법은? (피싱 방지)
+하드웨어 지갑(Ledger, Trezor)을 KyberSwap에 연결해서 써도 안전해?
+슬리피지(Slippage) 설정을 너무 높게 하면 어떤 위험이 있어?
+KyberSwap은 다중 서명(Multisig) 지갑을 사용해서 운영 자금을 관리해?
+스마트 컨트랙트에 버그가 발견되면 어떻게 보상받을 수 있어?
+'MEV(Miner Extractable Value)' 공격으로부터 사용자를 어떻게 보호해?
+KyberSwap 사용 시 발생할 수 있는 'Front-running' 방지책은?
+KyberSwap vs Uniswap, 어떤 점이 더 유리해?
+1inch나 Paraswap 같은 다른 애그리게이터보다 KyberSwap이 나은 점은?
+KyberSwap이 멀티체인 전략에서 강점을 가지는 이유는?
+KyberSwap의 거래량(Volume)은 현재 전체 DEX 중 몇 위 정도야?
+KyberSwap의 수수료 모델이 유니왑 V3와 다른 점은?
+왜 어떤 토큰은 KyberSwap에서만 유독 저렴해?
+KyberSwap의 생태계 파트너십 중 가장 중요한 것은?
+KyberSwap이 솔라나(Solana)나 다른 비-EVM 체인도 지원할 계획이 있어?
+KyberSwap의 TVL(Total Value Locked) 추이가 시장에 주는 의미는?
+전문 트레이더들이 KyberSwap을 선호하는 이유가 뭐야?
+KyberSwap과 Virtuals Protocol의 협업 내용이 뭐야?
+'AI 에이전트 토큰'을 KyberSwap에서 거래할 때의 장점은?
+'Positive Slippage Burn(긍정적 슬리피지 소각)' 메커니즘이 뭐야?
+AI 에이전트 토큰의 유동성을 KyberSwap에서 관리하는 이유는?
+KyberSwap Aggregator가 AI 에이전트 생태계에 어떻게 통합돼?
+AI 기술이 KyberSwap의 미래에 어떤 역할을 할 것 같아?
+KyberAI의 예측 모델은 머신러닝의 어떤 알고리즘을 써?
+AI 에이전트가 직접 KyberSwap에서 스왑을 실행하게 만들 수 있어?
+KyberSwap 플랫폼 내에서 AI 기반 챗봇이 거래를 도와줄 수 있어?
+AI Agent 토큰 거래 시 '소각 메커니즘'이 가격에 미치는 영향은?
+메타마스크 지갑을 KyberSwap에 연결하는 단계별 방법은?
+"Transaction Stuck(거래 멈춤)" 현상이 발생하면 어떻게 해결해?
+가스비를 아끼기 위한 최적의 시간대가 있을까?
+KyberSwap에서 'Insufficient Liquidity' 에러가 뜨면 어떻게 해야 해?
+스왑 결과가 예상보다 적게 들어왔어. 어디서 확인해?
+KyberSwap에서 내 거래 내역(History)을 엑셀로 뽑을 수 있어?
+모바일 앱(iOS/Android)에서도 KyberSwap을 쓸 수 있어?
+지갑 연결 시 'Wrong Network' 오류 해결 방법은?
+특정 토큰이 검색이 안 될 때 컨트랙트 주소로 추가하는 법은?
+KyberSwap 고객 센터나 커뮤니티(디스코드) 주소 알려줘.
+KNC 토큰의 총 공급량과 유통량은 얼마야?
+KNC를 스테이킹하면 보상을 어디서 받는 거야? (거래 수수료 분배?)
+KyberSwap의 수익 모델은 뭐야? 플랫폼은 어떻게 돈을 벌어?
+KNC 토큰 소각(Burn) 메커니즘이 아직도 작동해?
+KyberSwap은 VC(벤처캐피탈)로부터 투자를 얼마나 받았어?
+KNC 토큰 가격과 KyberSwap 거래량 사이의 상관관계는?
+KyberSwap이 새로운 체인을 확장할 때 KNC 가치에 어떤 영향을 줘?
+KyberDAO 투표권은 내가 가진 KNC 수량에 비례해?
+KNC 홀더로서 거버넌스 제안을 직접 올릴 수 있어?
+KyberSwap의 장기 로드맵에서 가장 기대되는 업데이트는?
+KyberSwap이 DeFi 생태계에서 해결하려는 근본적인 문제는?
+KyberSwap의 창업자(Loi Luu 등)들의 배경은 뭐야?
+KyberSwap은 왜 'Aggregator'와 'Liquidity Protocol' 두 가지를 다 해?
+규제(SEC 등)가 강화되면 KyberSwap 같은 DEX는 어떻게 대응해?
+향후 5년 내에 KyberSwap이 유니스왑을 이길 가능성이 있을까?
+KyberSwap이 기관 투자자들을 위해 준비하고 있는 서비스가 있어?
+'무허가성(Permissionless)'이라는 가치가 KyberSwap에서 어떻게 실현돼?
+KyberSwap의 브랜드 리브랜딩 역사가 궁금해.
+KyberSwap이 웹3 대중화(Mass Adoption)를 위해 하는 노력은?
+AI와 DeFi가 결합된 미래에 KyberSwap은 어떤 모습일까?
+Pendle Finance가 뭐야? 초등학생도 이해하게 설명해줘.
+'수익률 토큰화(Yield Tokenization)'가 정확히 무슨 뜻이야?
+PT(Principal Token)와 YT(Yield Token)의 차이점은?
+Pendle에서 말하는 'Maturity(만기)'란 무엇을 의미해?
+왜 Pendle을 쓰면 자산을 할인된 가격에 살 수 있는 거야?
+Pendle이 지원하는 대표적인 기초 자산(Underlying Assets)은 뭐야?
+Pendle을 사용하기 위해 필요한 준비물은? (지갑, 가스비 등)
+'Fixed Yield(고정 이자율)'와 'Long Yield(수익률 롱)' 중 나에게 맞는 건 뭘까?
+Pendle은 어떤 블록체인 네트워크(메인넷)에서 돌아가?
+Pendle에서 'SY(Standardized Yield)' 토큰이 왜 필요해?
+SY 토큰이 PT와 YT로 분리되는 수학적 원리는?
+Pendle AMM은 유니왑 V2/V3와 어떻게 달라?
+PT 가격이 만기가 가까워질수록 기초 자산 가격에 수렴하는 이유는?
+Pendle AMM에서 사용하는 'Time-Dependent AMM'의 특징은?
+'Implied Yield(내재 수익률)'와 'Underlying Yield(기초 수익률)'의 차이는?
+YT를 홀딩하면 수익(Yield)은 어떤 방식으로 정산돼서 들어와?
+만기가 지난 PT와 YT는 어떻게 처리해야 해?
+Pendle에서 'Flash Swap' 기능은 어떻게 작동해?
+Pendle V2 아키텍처가 V1에 비해 개선된 점은?
+Pendle의 오라클 시스템은 PT 가격을 어떻게 산출해?
+2026년에 도입된 sPENDLE이 뭐야? 기존 vePENDLE과 뭐가 달라?
+왜 Pendle은 've-모델'을 버리고 'Liquid Governance(sPENDLE)'로 전환했어?
+sPENDLE의 '14일 출금 대기 기간(Unwinding Period)'은 왜 있는 거야?
+sPENDLE 홀더가 받는 '수수료 공유(Revenue Sharing)' 비중은 얼마야?
+기존 vePENDLE 홀더들이 받은 'Virtual sPENDLE' 부스트 혜택은 어떻게 계산돼?
+sPENDLE을 다른 DeFi 프로토콜에서 담보로 쓸 수 있어?
+Pendle의 바이백(Buyback) 메커니즘은 sPENDLE 가치에 어떤 영향을 줘?
+PENDLE 토큰의 인플레이션(발행량 감소) 스케줄은 어떻게 돼?
+sPENDLE로 투표(Governance)를 하면 어떤 결정을 내릴 수 있어?
+Pendle 생태계 펀드(Ecosystem Fund)의 용도는 뭐야?
+'저평가된 자산'을 사기 위해 PT를 활용하는 구체적인 방법은?
+YT를 이용해 수익률에 '레버리지'를 일으키는 원리는?
+시장의 이자율이 오를 것 같을 때 어떤 토큰을 사야 해?
+PT를 매수했을 때 얻는 '고정 금리'는 어떻게 확정되는 거야?
+YT 투자 시 발생할 수 있는 '비영구적 손실'이 있어?
+만기일 이전에 PT나 YT를 팔면 손해를 볼 수도 있어?
+'Yield Arbitrage(수익률 차익거래)' 전략의 예시를 들어줘.
+Pendle에서 스테이블코인(USDT, USDC) 수익률을 극대화하는 법은?
+LRT(Liquid Restaking Token)를 Pendle에서 굴릴 때의 장점은?
+펜들에서 에어드랍 포인트(Points) 농사를 지을 때 YT가 유리한 이유는?
+Pendle LP(유동성 공급자)는 어떤 수익을 얻어?
+Pendle LP 포지션도 PT와 YT처럼 시간이 지나면 가치가 변해?
+'Zap' 기능을 써서 한 종류의 자산으로 유동성을 공급하는 과정은?
+Pendle LP가 받는 'Swap Fee'와 'PENDLE 인센티브'의 비율은?
+sPENDLE을 활용해 LP 수익률을 '부스트(Boost)'하는 방법은?
+Pendle 풀에서 '비영구적 손실(IL)'은 일반 DEX보다 적은 편이야?
+특정 풀의 'Voted Emissions'가 뭐야? 내 수익에 어떤 영향을 줘?
+Pendle LP 토큰을 다른 곳(예: Penpie, Equilibria)에 예치하는 게 좋아?
+Pendle AMM 내에서 집중화된 유동성이 관리되는 방식은?
+LP 공급 시 'Price Impact'를 줄이는 팁은?
+Pendle SDK를 사용해서 나만의 전략 봇을 만들 수 있어?
+StandardizedYield.sol 컨트랙트가 처리하는 주요 로직은?
+Pendle의 'EIP-5115' 표준 제안 배경과 내용은?
+PT를 담보로 대출(Lending)을 실행할 때 오라클 조작 위험은 없어?
+Pendle Router 컨트랙트의 swapExactTokensForPt 함수 작동 방식은?
+'Negative Yield(마이너스 수익률)' 상황이 발생하면 컨트랙트는 어떻게 처리해?
+Pendle의 스마트 컨트랙트 가스 효율은 다른 프로토콜과 비교해 어때?
+Pendle API를 통해 현재 가장 높은 APY 풀을 조회하는 법은?
+Pendle V2의 'Price Oracle' 구현 시 사용된 수학 모델은?
+Pendle의 보안 감사(Audit) 리포트 중 가장 최근 이슈는 뭐야?
+Pendle 투자 시 가장 큰 리스크인 'Smart Contract Risk'는 어느 정도야?
+기초 자산(예: stETH)이 디페깅(Depeg)되면 PT 가격은 어떻게 돼?
+Pendle의 TVL(총 예치 자산) 성장이 PENDLE 가격과 상관관계가 있어?
+금리 인상기 vs 금리 인하기, Pendle에게는 어느 쪽이 유리해?
+Pendle의 주요 경쟁 프로토콜은 어떤 것들이 있어?
+Pendle이 기관 투자자들에게 매력적인 이유는 뭐야?
+'Duration(듀레이션)' 개념을 Pendle 투자에 어떻게 적용해?
+Pendle에서 'Whale'들의 움직임을 추적하는 대시보드가 있어?
+Pendle의 'Boros(보로스)' 프로젝트가 뭐야? 기존 Pendle과 뭐가 달라?
+Pendle이 솔라나(Solana) 등 타 체인으로 확장할 때의 리스크는?
+Penpie(펜파이)나 Equilibria(이퀄리브리아) 같은 'Pendle War' 프로젝트가 뭐야?
+sPENDLE 전환 이후 이들 생태계 프로젝트들의 역할은 어떻게 변해?
+Ether.fi, Renzo 같은 리스테이킹 프로토콜과 Pendle의 파트너십 내용은?
+Pendle에서 발행된 PT를 담보로 쓰는 대출 프로토콜(예: Silo, Dolomite)은?
+Pendle의 'Points Market'이 어떻게 작동하는지 설명해줘.
+Pendle 인센티브 투표 시장(Bribe Market)에서 수익을 얻는 법은?
+펜들 생태계의 'Aggregator'들을 사용하면 가스비가 절약돼?
+Pendle이 'RWA(Real World Assets)' 분야로 확장할 가능성은?
+Pendle과 Kyber Network의 창업자들 사이에 어떤 연결고리가 있어?
+Pendle 커뮤니티(디스코드, 트위터)에서 가장 활발하게 논의되는 주제는?
+Pendle 앱에서 지갑 연결이 안 될 때 체크리스트는?
+"Transaction will fail" 에러가 뜨는 주요 원인 3가지는?
+내가 공급한 유동성이 대시보드에 안 보일 때 해결법은?
+Pendle에서 보상(Rewards)을 청구(Claim)할 때 가스비를 줄이는 팁은?
+만기가 지난 YT를 팔지 못했는데, 내 수익은 사라지는 거야?
+PT 구매 후 지갑에 토큰이 안 보일 때 컨트랙트 주소 찾는 법은?
+Pendle 앱의 'Pro 모드'와 'Lite 모드'의 차이점은?
+슬리피지(Slippage)를 몇 %로 설정하는 게 가장 안전해?
+Pendle에서 트랜잭션이 펜딩(Pending) 상태로 오래 머물 때 대응법은?
+Pendle 공식 문서(Docs) 외에 공부하기 좋은 리소스는?
+Pendle이 꿈꾸는 '온체인 금리 파생상품 시장'의 규모는?
+AI 에이전트가 Pendle의 수익률 곡선을 보고 자동 투자하는 시대가 올까?
+Pendle의 '무허가성(Permissionless)' 풀 상장 기준은?
+규제(SEC 등)가 DeFi 금리 상품에 미칠 영향과 Pendle의 대비책은?
+펜들이 전통 금융(TradFi)의 이자 스왑(Interest Rate Swap) 시장을 대체할 수 있을까?
+Pendle v3에서는 어떤 기능이 추가될 것으로 기대돼?
+펜들 팀의 철학 중 'Capital Efficiency'가 어떻게 구현되어 있어?
+비트코인 L2 생태계에서도 Pendle이 쓰일 수 있을까?
+Pendle의 성장이 이더리움 스테이킹 생태계에 미치는 영향은?
+david가 Pendle을 통해 연 20% 이상의 안정적인 수익을 내려면 어떤 로드맵을 짜야 할까?
