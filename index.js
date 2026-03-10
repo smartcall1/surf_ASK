@@ -15,11 +15,12 @@ const { generateQuestion, buildMessage, buildAssistantMessage } = require('./que
 const CFG = {
     ACTIVE_START_HOUR:  9,    // KST 활동 시작
     ACTIVE_END_HOUR:    23,   // KST 활동 종료
-    DAILY_Q_MIN:        2,    // 하루 최소 질문 수
-    DAILY_Q_MAX:        6,    // 하루 최대 질문 수
-    INTERVAL_MIN_MIN:   15,   // 질문 간 최소 간격(분)
-    INTERVAL_MAX_MIN:   55,   // 질문 간 최대 간격(분)
+    DAILY_Q_MIN:        5,    // 하루 최소 질문 수
+    DAILY_Q_MAX:        10,   // 하루 최대 질문 수
+    INTERVAL_MIN_MIN:   35,   // 질문 간 최소 간격(분)
+    INTERVAL_MAX_MIN:   90,   // 질문 간 최대 간격(분)
     FOLLOWUP_PROB:      0.35, // 후속 질문 확률
+    FOLLOWUP2_PROB:     0.20, // 후속의 후속 질문 확률
     READING_WPM:        230,  // 읽기 속도(단어/분)
 };
 
@@ -107,9 +108,25 @@ async function runConversation(jwt, sessionId) {
         const res2 = await sendChat(jwt, sessionId, messages);
         log(`✅ 후속 응답 수신 (${res2.text.length}자)`);
 
+        messages.push(buildAssistantMessage(res2.text));
+
         const delay2 = readingDelay(res2.text);
         log(`📖 읽는 중... (${Math.round(delay2 / 1000)}초)`);
         await sleep(delay2);
+
+        // 4. 후속의 후속 질문 여부 랜덤 결정
+        if (Math.random() < CFG.FOLLOWUP2_PROB) {
+            const q3 = await generateQuestion(messages);
+            log(`💬 후속의 후속 질문: ${q3}`);
+            messages.push(buildMessage(q3));
+
+            const res3 = await sendChat(jwt, sessionId, messages);
+            log(`✅ 후속의 후속 응답 수신 (${res3.text.length}자)`);
+
+            const delay3 = readingDelay(res3.text);
+            log(`📖 읽는 중... (${Math.round(delay3 / 1000)}초)`);
+            await sleep(delay3);
+        }
     }
 }
 
