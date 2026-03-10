@@ -11,9 +11,7 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "moment-timezone": "^0.6.0",
-    "puppeteer": "^24.36.1",
-    "puppeteer-extra": "^3.3.6",
-    "puppeteer-extra-plugin-stealth": "^2.11.2"
+    "@google/generative-ai": "^0.24.0",
+    "dotenv": "^16.4.0"
   }
 }
