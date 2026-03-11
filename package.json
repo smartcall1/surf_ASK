@@ -12,6 +12,8 @@
   "type": "commonjs",
   "dependencies": {
     "@google/generative-ai": "^0.24.0",
-    "dotenv": "^16.4.0"
+    "dotenv": "^16.4.0",
+    "got-scraping": "^4.2.1",
+    "hpagent": "^1.2.0"
   }
 }

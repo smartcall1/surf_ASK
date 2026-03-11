@@ -1,6 +1,5 @@
 const fs    = require('fs');
 const path  = require('path');
-const https = require('https');
 
 const TOKENS_FILE = path.join(__dirname, 'surf_tokens.json');
 
@@ -44,45 +43,41 @@ function getExpiryInfo(token) {
 
 // ── Refresh Token으로 새 JWT 발급 ─────────────────────────
 async function callRefresh(refreshToken) {
-    return new Promise((resolve, reject) => {
-        const body = JSON.stringify({ refresh_token: refreshToken });
-        const options = {
-            hostname: 'api.asksurf.ai',
-            path:     '/muninn/v1/auth/refresh',
-            method:   'POST',
-            headers:  {
-                'content-type':   'application/json',
-                'content-length': Buffer.byteLength(body),
+    try {
+        const { gotScraping } = await import('got-scraping');
+        // surf_client.js에서 buildHeaders를 가져오려면 순환 참조나 중복 코드를 피하기 위해 여기에 직접 구현하거나 
+        // 외부 모듈에서 필요한 부분만 사용할 수 있습니다. 여기서는 gotScraping의 기본 헤더 처리를 활용합니다.
+        const res = await gotScraping({
+            url: 'https://api.asksurf.ai/muninn/v1/auth/refresh',
+            method: 'POST',
+            json: { refresh_token: refreshToken },
+            responseType: 'json',
+            headers: {
                 'origin':         'https://asksurf.ai',
                 'referer':        'https://asksurf.ai/',
-                'user-agent':     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
                 'accept':         'application/json, text/plain, */*',
-            },
-        };
-
-        const req = https.request(options, (res) => {
-            let data = '';
-            res.on('data', c => data += c);
-            res.on('end', () => {
-                try {
-                    const json = JSON.parse(data);
-                    // 응답 구조: { success, data: { token, refreshToken } }
-                    const newToken   = json.data?.access_token  || json.data?.token  || json.token;
-                    const newRefresh = json.data?.refresh_token || json.data?.refreshToken || json.refreshToken || refreshToken;
-                    if (newToken) {
-                        resolve({ token: newToken, refreshToken: newRefresh });
-                    } else {
-                        reject(new Error(`갱신 실패 (HTTP ${res.statusCode}): ${data.slice(0, 200)}`));
-                    }
-                } catch (e) {
-                    reject(new Error(`응답 파싱 오류: ${e.message} | 원본: ${data.slice(0, 100)}`));
-                }
-            });
+                'x-device-id':    process.env.DEVICE_ID || 'web',
+                'sec-ch-ua':          '"Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"',
+                'sec-ch-ua-mobile':   '?0',
+                'sec-ch-ua-platform': '"Windows"',
+                'sec-fetch-dest':     'empty',
+                'sec-fetch-mode':     'cors',
+                'sec-fetch-site':     'same-site',
+            }
         });
-        req.on('error', reject);
-        req.write(body);
-        req.end();
-    });
+
+        const json = res.body;
+        const newToken   = json.data?.access_token  || json.data?.token  || json.token;
+        const newRefresh = json.data?.refresh_token || json.data?.refreshToken || json.refreshToken || refreshToken;
+        
+        if (newToken) {
+            return { token: newToken, refreshToken: newRefresh };
+        } else {
+            throw new Error(`갱신 실패 (HTTP ${res.statusCode}): ${JSON.stringify(json).slice(0, 200)}`);
+        }
+    } catch (e) {
+        throw new Error(`토큰 갱신 오류: ${e.message}`);
+    }
 }
 
 // ── 메인: 유효한 JWT 반환 (필요 시 자동 갱신) ─────────────
